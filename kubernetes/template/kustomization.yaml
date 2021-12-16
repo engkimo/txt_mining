@@ -1,0 +1,8 @@
+resources:
+- deployment.yaml
+- service.yaml
+# In this demo, ingress is not set. But, if you want to expose your app, you could set below manifests
+# - certificate.yaml
+# - frontend-config.yaml
+# - backend-config.yaml
+# - ingress.yaml

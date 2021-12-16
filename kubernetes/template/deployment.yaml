@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    name: app-deployment
+  name: app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-deployment
+  template:
+    metadata:
+      labels:
+        app: app-deployment
+    spec:
+      containers:
+      - name: app-deployment
+        image: app-image
+        ports:
+        - containerPort: 8501
+        resources:
+          limits:
+            cpu: "1"
+            memory: "2"

@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+plotly
+bokeh==2.4.1
+streamlit
+networkx
+nlplot

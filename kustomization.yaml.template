@@ -1,0 +1,12 @@
+bases:
+- ./kubernetes/template
+namespace: ${NAMESPACE}
+images:
+- name: ${APP_NAME}
+  newName: gcr.io/${PROJECT_ID}/streamlit-app
+  newTag: "${TAG}"
+
+# In this demo, ingress is not set. But, if you want to expose your app, you could set below manifests patch
+# patchesStrategicMerge:
+# - ./kubernetes/manifest_patch/certificate.yaml
+# - ./kubernetes/manifest_patch/ingress.yaml
