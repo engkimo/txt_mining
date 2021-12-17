@@ -1,4 +1,4 @@
-# stapy73_streamlit
+# What this?
 This repository is used for [Start Python Club #73](https://startpython.connpass.com/event/222478/).
 The following demo applications are stored in this repository:
 - Streamlit sample application to demonstrate ui widget, visualization, cache and session state
